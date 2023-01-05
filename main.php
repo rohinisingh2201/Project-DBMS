@@ -6,13 +6,13 @@
 </head>
 <?php
 
-session_start();
+// session_start();
 
-if($_SESSION["cust_username"]  == "")
-{
-	header("location: ./login.php");	
-	die();
-}
+// if($_SESSION["cust_username"]  == "")
+// {
+// 	header("location: ./login.php");	
+// 	die();
+// }
 // ?>
 <?php require_once 'header.php';?>
 <br><br>
