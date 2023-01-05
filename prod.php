@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="app.css">
 </head>
 
-<?php require_once 'main.php';?>
+<?php require_once 'header.php';?>
 <?php
 
 
@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
 }
 
 ?>
-<?php require_once 'main.php';?>
+<?php require_once 'header.php';?>
 <section class=product-page>
 <div class="container">
 	<div class="row">
@@ -84,6 +84,12 @@ if (isset($_POST['submit'])) {
 </div>
 </section>
 
-<?php
 
-?>
+<?php require_once 'footer.php';?>
+
+
+<script>
+	document.getElementById("testimonials").hidden = true;
+	document.getElementById("categories").hidden = true;
+	document.getElementById("new-arrivals").hidden = true;
+</script>
