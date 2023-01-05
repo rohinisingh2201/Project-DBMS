@@ -3,17 +3,18 @@
 <link rel="shortcut icon" href="/assets/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <link rel="stylesheet" href="app.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
 <?php
 
-// session_start();
+session_start();
 
-// if($_SESSION["cust_username"]  == "")
-// {
-// 	header("location: ./login.php");	
-// 	die();
-// }
-// ?>
+if($_SESSION["cust_username"]  == "")
+{
+	header("location: ./login.php");	
+	die();
+}
+?>
 <?php require_once 'header.php';?>
 <br><br>
 <!-- <div class="para">
@@ -31,15 +32,22 @@
           <div class="carousel-item active" data-bs-interval="4000">
             <img
               class="testimonials-image"
-              src="1.jpeg"
+              src="789.jpg"
               alt="profile"
             />
           </div>
           <div class="carousel-item" data-bs-interval="4000">
             <img
               class="testimonials-image"
-              src="2.jpeg"
-              alt="kkprofile"
+              src="123.jpg"
+              alt="profile"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img
+              class="testimonials-image"
+              src="456.jpg"
+              alt="profile"
             />
           </div>
         </div>
@@ -129,16 +137,18 @@
       <div class="container">
         <div class="row">
           <!-- <h1> NEW ARRIVALS</h1> -->
-		<br><br>
+		        <br><br>
             <div class="col-md-4 col-lg-4">
-              <img src="5.jpeg" alt="Snow" style="width:100%" height="500px">
+              <img src="24.jpeg" alt="Snow" style="width:100%" height="500px">
             </div>
             <div class="col-md-4 col-lg-4">
-              <img src="6.jpeg" alt="Forest" style="width:100%" height="500px">
+              <img src="33.jpg" alt="Forest" style="width:100%" height="500px">
             </div>   
             <div class="col-md-4 col-lg-4">
-              <img src="7.jpeg" alt="Forest" style="width:100%" height="500px">
-            </div>  
+              <img src="111.jpeg" alt="Forest" style="width:100%" height="500px">
+            </div>
+            
+            
         </div>
       </div>
     </section>
